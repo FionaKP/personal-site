@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <title>Fiona's Blog</title>
+</head>
+<body>
+    <div class="blog-navbar">
+        <div class="left-wrapper">
+            <a href="index.html">
+                <h1 class="site-title roboto-black"> Fiona Prendergast </h1>
+            </a>
+        </div>
+        <div class="gap"></div>
+        <div class="right-wrapper">
+            <div class="dropdown">
+                ≡
+            </div>
+        </div>
+    </div>
+    <div class="blog-content">
+        <!-- A NEW BLOG POST WOULD GO HERE - Example 'template' Below-->
+        <!-- <div class="post">
+            <div class="blog-post-title">
+                <h1 class="post-title">Go write a blog post!!</h1>
+                <div class="date-tags">
+                    <p class="date">Jan 18th!!</p>
+                    <p class="tag">tag you're it</p>
+                </div>
+            </div>
+            <div class="blog-post-body">
+                <p>Blog Post stuff goes here</p>
+            </div>
+            <div class="post-signature">
+                <p>Till morrow</p>
+                <p>- Fiona</p>
+            </div>
+        </div> -->
+        <div class="post">
+            <div class="blog-post-title">
+                <h1 class="post-title">So here's what I'm thinking... </h1>
+                <div class="date-tags">
+                    <p class="date">May 14, 2024</p>
+                    <p class="tag">Random</p>
+                    <p class="tag">Test</p>
+                </div>
+            </div>
+            <div class="blog-post-body">
+                <p>What if I just didn't give any Fs about making this look pretty whatsoever? Like sure somewhat here and there but really nothing besides a little css to put it all in the center and separating the paragraphs when I feel like it.</p> 
+                <p>Like if we are going to be honest, and I will since I can... This blog is for me and only me so I get to just mess around with it. While it isn't meant to be a train wreck I do think there is more value to me as an individual and as someone who is constantly evolving and learning her own style of design to just <u><b>DO</b></u> and not think so much about it all the time.</p>
+                <p>So here's what I am going to do! (Whether you like it or not, I really couldn't care less, you.) I am just going to write them all on one page for now. <span style="color:#E27743; font-size: 30px; font-weight: bold;">RIGHT HERE!!</span> Yep, so literally every single blog post will just go right above this one. How fun and charming!! </p>
+                <p>Here are some of the things that I would love to later on implement:</p>
+                <ol>
+                    <li><s>Add a go back to top button (https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)</s></li>
+                    <li>A "See More..." button that hides and unhides all but the most recent post on this page</li>
+                    <li>Separate blog post pages and one central "<i>Heres the start of the blog!</i>" page</li>
+                    <li>Make it so that those pages can be previewed (image or title etc.)</li>
+                    <li>Using flask and SQL make a function or mini web app so I can type each part into a form of sorts and just click a button and it makes the blog post for me on its own page</li>
+                </ol>
+                <p>What can I say? A girl has got big dreams for a blog with a sky blue background and nothing else on it. But you know what I have always spent SOOOOOO much time worrying about making things perfect that I never actually just get to the doing part. And that sucks because the doing is the best part of any project, not the worrying or planning it.</p>
+                <p>For tonight since it is nearly 1am, I am going to call it but this is good and I'll keep making updates. I will also 100% maybe probably but I really should put this on github and figure out how to host it too.</p>
+            </div>
+            <div class="post-signature">
+                <p>Till morrow</p>
+                <p>- Fiona</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go Back to Top of Page</button>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
