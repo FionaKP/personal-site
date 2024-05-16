@@ -31,7 +31,7 @@ a {
 
 .hero-image {
     /* https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
-    background-image: url("/images/homepage.jpg");
+    background-image: url(/images/homepage.jpg);
     background-color: #cccccc;
     background-position: center;
     background-position: bottom;
