@@ -1,8 +1,8 @@
 # Fiona's Personal Blog Site
 This site is mine and I am making it for me. It's my personal playground if you will for my web design challenges and inspirations. 
 
-|Version Number|Date|Description|
-|1.0|05.16.2024|Hero page and blog page with pop out menu and lots of potential additional directions to expand the site!|
+||Version Number|Date|Description|
+||1.0|05.16.2024|Hero page and blog page with pop out menu and lots of potential additional directions to expand the site!|
 
 ## How to View and Navigate Site
 
