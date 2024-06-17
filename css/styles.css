@@ -31,7 +31,8 @@ a {
 
 .hero-image {
     /* https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
-    background-image: url(/images/homepage.jpg);
+    background-image: url("docs/assets/images/homepage.jpg");
+    /* background-image: url("docs/assets/images/Snap convo.png"); */
     background-color: #cccccc;
     background-position: center;
     background-position: bottom;
