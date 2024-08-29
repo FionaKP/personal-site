@@ -231,11 +231,11 @@ a {
 
 
 /* SO HERE IS THE BLOG FORMATTING */
-.blog-wrapper {
+.blog-wrapper, .wrapper {
     display:flex;
     height: 100vh;
 }
-.blog-main {
+.blog-main, .project-main {
     flex-grow: 1;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -245,7 +245,7 @@ a {
     color: antiquewhite;
     box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.17);
 } */
-.blog-content {
+.blog-content, .project-content {
     width: 60%;
     align-items: center;
     justify-content: center;
@@ -272,7 +272,7 @@ a {
     border-radius: 5px;
 
 }
-.blog-post-body {
+.blog-post-body, .project-body {
     font-size: 20px;
 }
 #myBtn {
