@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery-img {
+            width: 600px;
+            height: auto;
+            margin:15px;
+            padding: 0;
+            border: solid 2px antiquewhite;
+        }
+        body {
+            background-color: rgb(203,183,165);
+        }
+        .row {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+        flex: 50%;
+        padding: 0 4px;
+        }
+
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <img class="gallery-img" src="docs/assets/gallery/little_theatre.jpg" alt="Old brick building with a sign near the door that says Little Theatre.">
+            <img class="gallery-img" src="docs/assets/gallery/bw_lego.jpg " alt="Black and white image of lego characters in front of a lego space shuttle.">
+        </div>
+        <div class="column">
+            <img class="gallery-img" src="docs/assets/gallery/car_reflection.JPG " alt="Girl with taking a picture of her reflection in a car window.">
+            <img class="gallery-img" src="docs/assets/gallery/cones.jpg " alt="3 traffic cones in a line.">
+        </div>
+        <div class="column">
+            <img class="gallery-img" src="docs/assets/gallery/flags.JPG " alt="A string of triangle flags with the one in the middle that says dream.">
+            <img class="gallery-img" src="docs/assets/gallery/goulding_sunset.JPG " alt="Gradient sky past sunset over trees and buildings.">
+        </div>
+    </div>
+</body>
+</html>

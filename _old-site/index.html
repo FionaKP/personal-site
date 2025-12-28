@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <title>Fiona Prendergast</title>
+</head>
+<body>
+    <div class="hero-wrapper">
+        <div class="hero-image">
+            <div class="nav">
+                <a href="index.html" class="nav-title roboto-black">Fiona Prendergast</a>
+                <div class="navbar">
+                    <a href="projects.html" class="link poppins-regular">Projects</a>
+                    <a href="blog.html" class="link poppins-regular">Blog</a>
+                </div>
+                <button class="side-menu-toggle poppins-regular" type="button">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div class="hero-content">
+                <div class="big-words roboto-black">
+                    <span class="word">adventurer</span>
+                    <span class="word">engineer</span>
+                    <span class="word">competitor</span>
+                    <span >&</span>
+                    <span class="word">fully alive</span>
+                </div>
+                <a href="blog.html" class="poppins-regular blog-link">some of my recent thoughts -></a>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h3>Who am I?</h3>
+            <div class="photo-box">
+                <img src="/docs/assets/images/senior_photo.jpg" alt="Headshot of Fiona standing outside" class="headshot">
+                <img src="/docs/assets/images/bw_senior_photo.jpg" alt="Black and white headshot of Fiona standing outside" class="bw-headshot">
+            </div>
+            <p>I'm <b style="color:lightpink;"><i>Fiona</i></b>! I am a software and robotics engineer, a student, an athlete, a christian and a whole lot more. Feel free to check out the links below to see more or get in contact with me!</p>
+            <div class="side-menu-nav">
+                <a href="" class="side-menu-link">Full Bio</a>
+                <a href="" class="side-menu-link">Contact</a>
+                <a href="gallery.html" class="side-menu-link">Photo Gallery</a>
+                <!-- <a href="" class="side-menu-link">Site Versions</a> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".side-menu-toggle").addEventListener("click", () => {
+            document.querySelector(".hero-wrapper").classList.toggle("side-menu-open");
+        });
+    </script>
+</body>
+</html>

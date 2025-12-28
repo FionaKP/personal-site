@@ -1,17 +1,36 @@
-# Fiona's Personal Blog Site
-This site is mine and I am making it for me. It's my personal playground if you will for my web design challenges and inspirations. 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-|Version Number|Date|Description|
-|--------------|------|-----------------------|
-|1.0|05.16.2024|Hero page and blog page with pop out menu and lots of potential additional directions to expand the site!|
+## Getting Started
 
-## How to View and Navigate Site
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Languages and Frameworks Used
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Things I've Learned from this Project 
-1. Nothing is all that serious. It doesn't matter that my blog is on one page with nothing but a nav bar and centered text - the point of this is the exercise not the end product.
-4. I love doing this kind of stuff. I've known that for a while but I think it is worth reiterating because it makes all the harder stuff so worth it.
-5. Everyone's style is different. I've spend SO much time pouring over other people's portfolios but it's okay that mine looks different and isn't complete yet. I'm working on it and that's what matters.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
