@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fiona Prendergast - Personal Portfolio
+
+A modern, hand-crafted personal portfolio website showcasing my projects, experience, and personality. Built with Next.js, TypeScript, and Tailwind CSS.
+
+**Live Site:** [https://fionaprendergast.vercel.app/](https://fionaprendergast.vercel.app/) 
+
+## About This Project
+
+This portfolio started as a simple HTML/CSS/JS site from a long time ago as a test and strictly personal project and was rebuilt from the ground up using modern web technologies. The goal was to create something that not only showcases my work but also reflects who I am as a developer, engineer, and person with a bit of my personality through hand-drawn design elements and playful interactions. 
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) with App Router
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Fonts:** Google Fonts (Poppins, Roboto, Caveat)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+### Key Features
+
+- **Hand-drawn aesthetic** - Custom SVG doodles including sketchy corners, paper airplanes, arrows, and annotations
+- **Interactive word marquee** - Hover effects that transform words to reveal descriptors
+- **Hidden easter egg** - A secret photo gallery accessible through a subtle camera icon
+- **Responsive design** - Fully optimized for mobile, tablet, and desktop
+- **Smooth animations** - Cycling hero text, hover transitions, and scroll effects
+
+## What I Learned
+
+Building this portfolio taught me several valuable skills:
+
+- **Next.js App Router** - Understanding the new app directory structure, layouts, and server/client components
+- **TypeScript with React** - Proper typing for components, props, and state management
+- **Tailwind CSS** - Utility-first styling, responsive design patterns, and custom configurations
+- **SVG Creation** - Hand-coding SVG paths for custom illustrations and animations
+- **Component Architecture** - Breaking down a design into reusable, maintainable components
+- **CSS Animations** - Creating smooth transitions and hover effects
+- **Responsive Design** - Mobile-first approach with breakpoint-based layouts
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── page.tsx          # Main landing page
+│   ├── layout.tsx        # Root layout with fonts
+│   ├── resume/           # Full resume page
+│   └── gallery/          # Hidden photo gallery
+├── components/
+│   ├── Navigation.tsx    # Header navigation
+│   ├── Hero.tsx          # Hero section with cycling words
+│   ├── About.tsx         # About me section
+│   ├── Projects.tsx      # Project showcase grid
+│   ├── Experience.tsx    # Work experience timeline
+│   ├── WordMarquee.tsx   # Interactive word banner
+│   ├── Contact.tsx       # Contact form and links
+│   ├── Footer.tsx        # Footer with social links
+│   └── HandDrawn.tsx     # Custom SVG doodle components
+└── public/
+    ├── images/           # Hero and profile photos
+    └── gallery/          # Gallery photos
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/FionaKP/personal-site.git
+   cd personal-site
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Potential Future Improvements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] Add dark mode toggle
+- [ ] Implement contact form backend (currently frontend only)
+- [ ] Add more projects as I complete them
+- [ ] Blog section for writing about my experiences
+- [ ] Improve accessibility (ARIA labels, keyboard navigation)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is open source and available under the [MIT License](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js, TypeScript & Tailwind CSS

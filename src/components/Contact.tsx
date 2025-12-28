@@ -106,53 +106,88 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Quick Message */}
-            <div className="space-y-6">
+            {/* Quick Message - Under Construction */}
+            <div className="space-y-6 relative">
               <h3 className="font-[family-name:var(--font-roboto)] font-bold text-xl text-[#1e3a5f]">
                 Or send a quick message
               </h3>
 
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all"
-                    placeholder="Your name"
-                  />
+              {/* Form with blur */}
+              <div className="relative">
+                <form className="space-y-4 blur-[2px] pointer-events-none select-none">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      disabled
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg bg-gray-100"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      disabled
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg bg-gray-100"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows={4}
+                      disabled
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg bg-gray-100 resize-none"
+                      placeholder="What's on your mind?"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    disabled
+                    className="w-full px-6 py-3 bg-gray-400 text-white rounded-lg font-semibold cursor-not-allowed"
+                  >
+                    Send Message
+                  </button>
+                </form>
+
+                {/* Construction overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg transform -rotate-3 border-2 border-dashed border-amber-400">
+                    {/* Construction sign */}
+                    <div className="text-center">
+                      <svg
+                        className="w-16 h-16 mx-auto text-amber-500 mb-3"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        {/* Traffic cone */}
+                        <path d="M9.5 21h5M12 3l-3.5 14h7L12 3z" />
+                        <path d="M10 8.5h4M9.5 12h5" />
+                      </svg>
+                      <p className="font-[family-name:var(--font-caveat)] text-2xl text-[#1e3a5f] mb-1">
+                        Construction Zone!
+                      </p>
+                      <p className="text-gray-500 text-sm">
+                        For now, just email me directly
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all resize-none"
-                    placeholder="What's on your mind?"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-[#1e3a5f] text-white rounded-lg font-semibold hover:bg-[#2d5a8a] transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
