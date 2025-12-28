@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import WordMarquee from "@/components/WordMarquee";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <WordMarquee />
       <Projects />
       <Experience />
       <Contact />

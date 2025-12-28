@@ -1,21 +1,34 @@
+import { HandDrawnUnderline, HandDrawnStar, SmileyFace } from "./HandDrawn";
+
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 bg-gray-50 relative overflow-hidden">
+      {/* Decorative stars */}
+      <div className="absolute top-16 left-8 text-amber-400/30 transform rotate-12 hidden sm:block">
+        <HandDrawnStar className="w-8 h-8" />
+      </div>
+      <div className="absolute top-24 right-12 text-[#1e3a5f]/20 transform -rotate-6 hidden sm:block">
+        <HandDrawnStar className="w-6 h-6" />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <span className="text-pink-500 font-semibold text-sm uppercase tracking-wider">
-            Get In Touch
+          <span className="font-[family-name:var(--font-caveat)] text-2xl text-amber-600 flex items-center justify-center gap-2">
+            Let's Connect! <SmileyFace className="w-6 h-6 inline-block" />
           </span>
-          <h2 className="font-[family-name:var(--font-roboto)] font-bold text-4xl sm:text-5xl text-[#1e3a5f] mt-2">
-            Let's Connect!
-          </h2>
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          <div className="relative inline-block">
+            <h2 className="font-[family-name:var(--font-roboto)] font-bold text-4xl sm:text-5xl text-[#1e3a5f] mt-2">
+              Get In Touch
+            </h2>
+            <HandDrawnUnderline className="text-amber-400 h-4 -bottom-1" />
+          </div>
+          <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
             Whether you want to discuss a project, have a question, or just want to say hi—
             I'd love to hear from you!
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+        <div className="relative bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div className="space-y-6">
@@ -26,9 +39,9 @@ export default function Contact() {
               <div className="space-y-4">
                 <a
                   href="mailto:fkprendergast@wpi.edu"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-pink-50 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors group"
                 >
-                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-pink-400 transition-colors">
+                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-amber-400 transition-colors">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -53,9 +66,9 @@ export default function Contact() {
                   href="https://linkedin.com/in/fionaprendergast"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-pink-50 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors group"
                 >
-                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-pink-400 transition-colors">
+                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-amber-400 transition-colors">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="currentColor"
@@ -74,9 +87,9 @@ export default function Contact() {
                   href="https://github.com/FionaKP"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-pink-50 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors group"
                 >
-                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-pink-400 transition-colors">
+                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center group-hover:bg-amber-400 transition-colors">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="currentColor"
@@ -107,7 +120,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-pink-300 focus:border-pink-300 outline-none transition-all"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all"
                     placeholder="Your name"
                   />
                 </div>
@@ -118,7 +131,7 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-pink-300 focus:border-pink-300 outline-none transition-all"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -129,7 +142,7 @@ export default function Contact() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-pink-300 focus:border-pink-300 outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-300 focus:border-amber-300 outline-none transition-all resize-none"
                     placeholder="What's on your mind?"
                   />
                 </div>

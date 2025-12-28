@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navigation() {
@@ -20,7 +20,9 @@ export default function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className="font-[family-name:var(--font-roboto)] font-black text-xl text-[#1e3a5f] hover:text-[#2d5a8a] transition-colors"
+            scroll={true}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="font-[family-name:var(--font-roboto)] font-black text-2xl text-[#1e3a5f] hover:text-[#2d5a8a] transition-colors"
           >
             Fiona Prendergast
           </Link>
@@ -28,13 +30,13 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-gray-600 hover:text-[#1e3a5f] font-medium transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Link
               href="/resume"
@@ -80,14 +82,14 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className="text-gray-600 hover:text-[#1e3a5f] font-medium transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <Link
                 href="/resume"

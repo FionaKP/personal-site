@@ -2,8 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { SharpCornerBrackets, PaperAirplaneWithTrail } from "./HandDrawn";
 
-const words = ["adventurer", "engineer", "competitor", "fully alive"];
+const words = [
+  { prefix: "I'm an", word: "adventurer" },
+  { prefix: "I'm an", word: "engineer" },
+  { prefix: "I'm a", word: "competitor" },
+  { prefix: "I'm", word: "fully alive" },
+];
 
 export default function Hero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -35,6 +41,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#1e3a5f]/70 via-[#1e3a5f]/50 to-[#1e3a5f]/80" />
       </div>
 
+      {/* Sharp corner brackets */}
+      <SharpCornerBrackets className="text-amber-400/50 z-[5]" />
+
+      {/* Paper airplane with dotted trail */}
+      <div className="absolute top-20 left-0 w-64 sm:w-80 z-[5]">
+        <PaperAirplaneWithTrail className="text-amber-400/60 w-full h-auto" />
+      </div>
+
       {/* Content */}
       <div className="relative z-10 text-center px-4 pt-16">
         <div className="mb-6">
@@ -45,31 +59,31 @@ export default function Hero() {
 
         <h1 className="font-[family-name:var(--font-roboto)] font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6">
           Hi, I'm{" "}
-          <span className="text-pink-300">Fiona</span>
+          <span className="text-amber-400">Fiona</span>
         </h1>
 
         <div className="h-16 sm:h-20 flex items-center justify-center">
-          <p className="text-2xl sm:text-3xl md:text-4xl text-white/90 font-light">
-            I'm an{" "}
-            <span
-              className={`inline-block font-semibold text-pink-300 transition-all duration-300 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
-              }`}
-            >
-              {words[currentWordIndex]}
+          <p
+            className={`text-2xl sm:text-3xl md:text-4xl text-white/90 font-light transition-all duration-300 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+            }`}
+          >
+            {words[currentWordIndex].prefix}{" "}
+            <span className="font-semibold text-amber-400">
+              {words[currentWordIndex].word}
             </span>
           </p>
         </div>
 
         <p className="mt-8 text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
           A student, athlete, christian, and a whole lot more.
-          I believe in doing over perfection and living life fully.
+          I believe in living life fully and that doing is more important than perfection.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#projects"
-            className="px-8 py-4 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-pink-100 transition-colors"
+            className="px-8 py-4 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-white/90 transition-colors"
           >
             View My Work
           </a>
@@ -82,9 +96,9 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="mt-12 animate-bounce">
           <svg
-            className="w-6 h-6 text-white/60"
+            className="w-6 h-6 text-white/60 mx-auto"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

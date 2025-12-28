@@ -43,7 +43,7 @@ export default function Experience() {
     <section id="experience" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-pink-500 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">
             Background
           </span>
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-4xl sm:text-5xl text-[#1e3a5f] mt-2">
@@ -59,14 +59,14 @@ export default function Experience() {
             </h3>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
-                <div key={index} className="relative pl-8 border-l-2 border-pink-200">
+                <div key={index} className="relative pl-8 border-l-2 border-amber-200">
                   {/* Timeline dot */}
                   <div className={`absolute -left-[9px] top-0 w-4 h-4 rounded-full ${
-                    exp.type === "education" ? "bg-[#1e3a5f]" : "bg-pink-400"
+                    exp.type === "education" ? "bg-[#1e3a5f]" : "bg-amber-400"
                   }`} />
 
                   <div className="bg-gray-50 rounded-xl p-5 hover:shadow-md transition-shadow">
-                    <span className="text-sm text-pink-500 font-medium">
+                    <span className="text-sm text-amber-500 font-medium">
                       {exp.period}
                     </span>
                     <h4 className="font-[family-name:var(--font-roboto)] font-bold text-lg text-[#1e3a5f] mt-1">
@@ -113,7 +113,7 @@ export default function Experience() {
               </p>
               <Link
                 href="/resume"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-pink-100 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-100 transition-colors"
               >
                 <svg
                   className="w-5 h-5"

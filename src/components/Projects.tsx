@@ -1,81 +1,106 @@
-import Image from "next/image";
-
 const projects = [
   {
-    title: "Drink Card Website",
-    description: "A web application for managing and sharing custom drink recipes. Built with modern web technologies for a seamless user experience.",
-    tags: ["React", "Node.js", "Database"],
+    title: "YouTube Time Tracker",
+    description: "A Chrome extension that tracks and visualizes your YouTube watching habits, helping you stay mindful of your screen time and make intentional choices about content consumption.",
+    tags: ["Chrome Extension", "JavaScript", "Productivity"],
     status: "In Progress",
-    image: null,
+    emoji: "⏱️",
   },
   {
-    title: "AXiD Book Library System",
-    description: "A library management system for organizing and tracking books within the Alpha Xi Delta sorority chapter.",
-    tags: ["Full Stack", "Database", "UI/UX"],
-    status: "Planned",
-    image: null,
+    title: "Automated Parachute Packing System",
+    description: "Senior MQP project integrating a WidowX-200 robotic arm, ESP32 microcontroller, and dual cameras into an automated packing solution with ROS 2 architecture.",
+    tags: ["ROS 2", "Python", "Robotics"],
+    status: "In Progress",
+    emoji: "🪂",
   },
   {
-    title: "Shared Prayers App",
-    description: "A community-focused application for sharing prayer requests and supporting one another through faith.",
-    tags: ["Mobile", "Community", "Faith"],
-    status: "Concept",
-    image: null,
+    title: "Ecuador Microfinance Platform",
+    description: "A responsive web platform for 20+ women's microfinance groups in Cuenca, Ecuador, featuring an amortization calculator, document repository, and directory system.",
+    tags: ["Next.js", "React", "Social Impact"],
+    status: "Live",
+    emoji: "💰",
   },
   {
     title: "Personal Portfolio",
     description: "This very website! Built with Next.js, TypeScript, and Tailwind CSS to showcase my work and personality.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     status: "Live",
-    image: null,
+    emoji: "💻",
+  },
+  {
+    title: "AI Resume Grader",
+    description: "An AI-powered resume evaluator using TF-IDF vectorization and cosine similarity to analyze resumes and generate personalized improvement recommendations.",
+    tags: ["Python", "AI/ML", "NLP"],
+    status: "Completed",
+    emoji: "📄",
+  },
+  {
+    title: "Student Research Connect",
+    description: "Full-stack Flask web application connecting students with campus research opportunities and helping faculty find qualified candidates.",
+    tags: ["Python", "Flask", "MySQL"],
+    status: "Completed",
+    emoji: "🔬",
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-24 relative overflow-hidden">
+      {/* Grid paper background */}
+      <div
+        className="absolute inset-0 bg-[#fafafa]"
+        style={{
+          backgroundImage: `
+            linear-gradient(#e5e7eb 1px, transparent 1px),
+            linear-gradient(90deg, #e5e7eb 1px, transparent 1px)
+          `,
+          backgroundSize: "20px 20px",
+        }}
+      />
+      {/* Blue margin line like notebook paper */}
+      <div className="absolute left-8 md:left-16 top-0 bottom-0 w-[2px] bg-red-200/50" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <span className="text-pink-500 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">
             My Work
           </span>
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-4xl sm:text-5xl text-[#1e3a5f] mt-2">
             Projects & Ideas
           </h2>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
-            I have so many ideas bouncing around in my brain—here's where I keep track
-            of what I want to build and what I'm working on.
+            I have so many ideas bouncing around in my brain—
+            <span className="font-[family-name:var(--font-caveat)] text-amber-600 text-xl">
+              here's where I keep track!
+            </span>
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project) => (
             <div
               key={project.title}
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               {/* Project Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8a] flex items-center justify-center">
-                <span className="text-6xl opacity-30">
-                  {index === 0 && "🍹"}
-                  {index === 1 && "📚"}
-                  {index === 2 && "🙏"}
-                  {index === 3 && "💻"}
+              <div className="h-40 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8a] flex items-center justify-center">
+                <span className="text-5xl opacity-40 group-hover:opacity-60 group-hover:scale-110 transition-all duration-300">
+                  {project.emoji}
                 </span>
               </div>
 
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-[family-name:var(--font-roboto)] font-bold text-xl text-[#1e3a5f]">
+              <div className="p-5">
+                <div className="flex items-start justify-between gap-2 mb-3">
+                  <h3 className="font-[family-name:var(--font-roboto)] font-bold text-lg text-[#1e3a5f] leading-tight">
                     {project.title}
                   </h3>
                   <span
-                    className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    className={`px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap ${
                       project.status === "Live"
                         ? "bg-green-100 text-green-700"
                         : project.status === "In Progress"
-                        ? "bg-yellow-100 text-yellow-700"
-                        : project.status === "Planned"
+                        ? "bg-amber-100 text-amber-700"
+                        : project.status === "Completed"
                         ? "bg-blue-100 text-blue-700"
                         : "bg-gray-100 text-gray-700"
                     }`}
@@ -84,15 +109,15 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-pink-50 text-pink-600 rounded-full text-sm font-medium"
+                      className="px-2.5 py-1 bg-amber-50 text-amber-600 rounded-full text-xs font-medium"
                     >
                       {tag}
                     </span>
@@ -104,7 +129,7 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-500 italic">
+          <p className="font-[family-name:var(--font-caveat)] text-xl text-gray-500">
             More projects coming soon... the ideas never stop!
           </p>
         </div>

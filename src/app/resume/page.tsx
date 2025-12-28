@@ -205,8 +205,8 @@ export default function ResumePage() {
         {/* Education */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
               </svg>
@@ -220,7 +220,7 @@ export default function ResumePage() {
                 <p className="text-gray-600">B.S. in Computer Science and Robotics Engineering</p>
               </div>
               <div className="text-right">
-                <p className="text-pink-500 font-medium">Expected May 2026</p>
+                <p className="text-amber-500 font-medium">Expected May 2026</p>
                 <p className="text-[#1e3a5f] font-bold">GPA: 4.0/4.0</p>
               </div>
             </div>
@@ -234,8 +234,8 @@ export default function ResumePage() {
         {/* Skills */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </span>
@@ -255,8 +255,8 @@ export default function ResumePage() {
         {/* Work Experience */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </span>
@@ -271,11 +271,11 @@ export default function ResumePage() {
                     <p className="text-gray-600">{job.company}</p>
                     {job.subtitle && <p className="text-gray-500 text-sm italic">{job.subtitle}</p>}
                   </div>
-                  <p className="text-pink-500 font-medium text-sm whitespace-nowrap">{job.period}</p>
+                  <p className="text-amber-500 font-medium text-sm whitespace-nowrap">{job.period}</p>
                 </div>
                 <ul className="space-y-2">
                   {job.bullets.map((bullet, i) => (
-                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-pink-300 before:rounded-full">
+                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-amber-300 before:rounded-full">
                       {bullet}
                     </li>
                   ))}
@@ -288,8 +288,8 @@ export default function ResumePage() {
         {/* Robotics Projects */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
               </svg>
             </span>
@@ -303,11 +303,11 @@ export default function ResumePage() {
                     <h3 className="font-bold text-lg text-[#1e3a5f]">{project.title}</h3>
                     <p className="text-gray-500 text-sm italic">{project.subtitle}</p>
                   </div>
-                  <p className="text-pink-500 font-medium text-sm whitespace-nowrap">{project.period}</p>
+                  <p className="text-amber-500 font-medium text-sm whitespace-nowrap">{project.period}</p>
                 </div>
                 <ul className="space-y-2">
                   {project.bullets.map((bullet, i) => (
-                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-pink-300 before:rounded-full">
+                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-amber-300 before:rounded-full">
                       {bullet}
                     </li>
                   ))}
@@ -320,8 +320,8 @@ export default function ResumePage() {
         {/* CS Projects */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             </span>
@@ -335,11 +335,11 @@ export default function ResumePage() {
                     <h3 className="font-bold text-lg text-[#1e3a5f]">{project.title}</h3>
                     <p className="text-gray-500 text-sm italic">{project.subtitle}</p>
                   </div>
-                  <p className="text-pink-500 font-medium text-sm whitespace-nowrap">{project.period}</p>
+                  <p className="text-amber-500 font-medium text-sm whitespace-nowrap">{project.period}</p>
                 </div>
                 <ul className="space-y-2">
                   {project.bullets.map((bullet, i) => (
-                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-pink-300 before:rounded-full">
+                    <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-amber-300 before:rounded-full">
                       {bullet}
                     </li>
                   ))}
@@ -352,8 +352,8 @@ export default function ResumePage() {
         {/* Leadership & Activities */}
         <section className="mb-12">
           <h2 className="font-[family-name:var(--font-roboto)] font-bold text-2xl text-[#1e3a5f] mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
               </svg>
             </span>
@@ -364,7 +364,7 @@ export default function ResumePage() {
               <div key={index} className="bg-white rounded-xl p-5 shadow-sm">
                 <div className="flex justify-between items-start gap-2 mb-2">
                   <h3 className="font-bold text-[#1e3a5f]">{item.title}</h3>
-                  <p className="text-pink-500 text-xs font-medium whitespace-nowrap">{item.period}</p>
+                  <p className="text-amber-500 text-xs font-medium whitespace-nowrap">{item.period}</p>
                 </div>
                 <ul className="space-y-1">
                   {item.roles.map((role, i) => (
@@ -380,7 +380,7 @@ export default function ResumePage() {
         <div className="text-center pt-8 border-t border-gray-200">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#1e3a5f] hover:text-pink-500 font-medium transition-colors"
+            className="inline-flex items-center gap-2 text-[#1e3a5f] hover:text-amber-500 font-medium transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
