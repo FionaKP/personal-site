@@ -69,9 +69,9 @@ export default function Projects() {
             Projects & Ideas
           </h2>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
-            I have so many ideas bouncing around in my brain—
+            From early concepts to working systems&#160;
             <span className="font-[family-name:var(--font-caveat)] text-amber-600 text-xl">
-              here's where I keep track!
+             - projects I've loved bringing to life
             </span>
           </p>
         </div>

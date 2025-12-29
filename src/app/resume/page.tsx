@@ -144,7 +144,7 @@ const leadership = [
   },
   {
     title: "Eagle Scout",
-    roles: ["Founding member of femxtale Scouts BSA Troop 65"],
+    roles: ["Founding member of female Scouts BSA Troop 65"],
     period: "2018 - 2022",
   },
 ];

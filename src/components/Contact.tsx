@@ -23,7 +23,7 @@ export default function Contact() {
             <HandDrawnUnderline className="text-amber-400 h-4 -bottom-1" />
           </div>
           <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-            Whether you want to discuss a project, have a question, or just want to say hi—
+            Whether you want to discuss a project, have a question, or just want to say hi.
             I'd love to hear from you!
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/fionaprendergast"
+                  href="https://linkedin.com/in/fiona-prendergast"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors group"

@@ -76,8 +76,8 @@ export default function Hero() {
         </div>
 
         <p className="mt-8 text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-          A student, athlete, christian, and a whole lot more.
-          I believe in living life fully and that doing is more important than perfection.
+          Engineer building systems people actually use,
+          taking ideas from zero to one through user-centered design, iteration, and execution.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">

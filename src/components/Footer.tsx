@@ -14,7 +14,7 @@ export default function Footer() {
               Fiona Prendergast
             </h3>
             <p className="text-white/60 mt-1">
-              Adventurer. Engineer. Competitor. Fully alive.
+              Technical depth. Human by design.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
             {/* LinkedIn */}
             <div className="relative group">
               <a
-                href="https://linkedin.com/in/fionaprendergast"
+                href="https://linkedin.com/in/fiona-prendergast"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-amber-400 transition-colors"

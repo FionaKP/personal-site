@@ -55,22 +55,27 @@ export default function About() {
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
                   I'm <span className="font-semibold text-amber-500">Fiona</span>!
-                  I'm a software and robotics engineer with a passion for building things
-                  that matter. Whether it's coding late into the night or competing on
-                  the field, I bring the same energy and determination to everything I do.
+                  I'm a Software and Robotics Engineering student with a passion for building systems that
+                  are reliable and genuinely useful, things that matter. I enjoy working across the full lifecycle 
+                  of a project, from early problem framing and design through implementation, iteration, and delivery.
                 </p>
                 <p>
-                  As a student athlete, I've learned that success comes from showing up
-                  every day and putting in the work—even when no one's watching. I believe
-                  in doing over perfection, learning by building, and living life fully alive.
+                  My background as a student athlete has shaped how I approach engineering with 
+                  consistency over intensity, progress over perfection and relentless attention to 
+                  detail even when no one is watching. I believe the best solutions come from environments
+                  where mistakes are cherished because building, testing and learning happen 
+                  quickly. When technical decisions are guided and informed by real user needs, magic happens.
                 </p>
                 <p>
-                  When I'm not coding or studying, you'll find me on the field, exploring
-                  new adventures, or dreaming up my next project idea{" "}
+                  Outside the classroom and office, I spend my time competing on the soccer or rugby pitch, exploring
+                  new places, and dreaming up my next big project idea {" "}
                   <span className="font-[family-name:var(--font-caveat)] text-amber-600 text-xl">
-                    (usually in one of my 800 notebooks)
+                    - gotta see the world to change it
                   </span>
                   .
+                </p>
+                <p className="mt-6 text-base italic text-gray-500">
+                  I’m always excited to talk about projects, ideas, or what I’m building next.
                 </p>
               </div>
 
