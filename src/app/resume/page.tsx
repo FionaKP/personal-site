@@ -123,29 +123,44 @@ const csProjects = [
 
 const leadership = [
   {
-    title: "Alpha Xi Delta Women's Fraternity",
-    roles: ["Finance Director (Current)", "National Sorority Leadership Honor Society (Sep 2024 - Present)", "Academic Achievement Director (2023)"],
-    period: "Nov 2022 - Present",
+    title: "WPI Varsity Women's Soccer",
+    roles: ["Team Captain (Current)"],
+    period: "Aug 2022 – Present",
   },
   {
-    title: "WPI Varsity Women's Soccer",
-    roles: ["Team Captain (Current)", "Student Athlete Advisory Committee (SAAC) Team Representative"],
-    period: "Aug 2022 - Present",
+    title: "Alpha Xi Delta Women's Fraternity",
+    roles: ["Finance Director (Current)", "Academic Achievement Director"],
+    period: "Nov 2022 – Present",
+  },
+  {
+    title: "Tau Beta Pi Engineering Honor Society",
+    roles: ["Member"],
+    period: "Nov 2024 – Present",
+  },
+  {
+    title: "Rho Lambda National Sorority Leadership Honor Society",
+    roles: ["Member"],
+    period: "Sep 2024 – Present",
+  },
+  {
+    title: "Student-Athlete Advisory Committee (SAAC)",
+    roles: ["Committee Chair (Current), Team Representative"],
+    period: "Aug 2023 – Present",
   },
   {
     title: "WPI Women's Rugby",
     roles: ["Team Member"],
-    period: "Jan 2023 - Present",
+    period: "Jan 2023 – Present",
   },
   {
     title: "Fellowship of Christian Athletes",
     roles: ["Executive Board Member"],
-    period: "Sep 2022 - Present",
+    period: "Sep 2022 – Present",
   },
   {
-    title: "Eagle Scout",
-    roles: ["Founding member of female Scouts BSA Troop 65"],
-    period: "2018 - 2022",
+    title: "Eagle Scout, Scouts BSA",
+    roles: ["Founding member of female Troop 65"],
+    period: "2018 – 2022",
   },
 ];
 
@@ -170,6 +185,26 @@ export default function ResumePage() {
               <p className="mt-2 text-white/80 text-lg">
                 Software & Robotics Engineering Student
               </p>
+              <a
+                href="/resume/Fiona_Prendergast_SW_Robotics_Resume.pdf"
+                download
+                className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-amber-400 text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-300 transition-colors text-sm"
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                Download PDF
+              </a>
             </div>
             <div className="flex flex-col gap-2 text-sm text-white/80">
               <a href="mailto:fkprendergast@wpi.edu" className="hover:text-white transition-colors flex items-center gap-2">
@@ -225,7 +260,7 @@ export default function ResumePage() {
               </div>
             </div>
             <div className="mt-4 space-y-2 text-sm text-gray-600">
-              <p><span className="font-medium text-gray-700">Relevant Coursework:</span> Unified Robotics 1001-3002, Drivetrain Systems, Control Engineering, Software Engineering, Database Systems I & II, Machine Learning, Artificial Intelligence, Algorithms, Object Oriented Programming</p>
+              <p><span className="font-medium text-gray-700">Relevant Coursework:</span> Unified Robotics Series, Machine Learning, Control Engineering, Software Engineering, Database Systems I & II, Drivetrain Systems,  Artificial Intelligence, Algorithms, Human Robot Interaction, Software Radio Design</p>
               <p><span className="font-medium text-gray-700">Academic Honors:</span> 7/7 Dean's List Semesters, 3 years NEWMAC Academic All-Conference, 4x WPI Presidential Merit Scholarship, 4x Lesley Small Scholarship, Jean Leider Engineering Scholarship</p>
             </div>
           </div>
@@ -357,7 +392,7 @@ export default function ResumePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
               </svg>
             </span>
-            Leadership & Activities
+            Leadership & Involvements
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {leadership.map((item, index) => (

@@ -111,25 +111,47 @@ export default function Experience() {
               <p className="text-white/80 mb-4">
                 View my complete resume with all projects, experience, and leadership roles.
               </p>
-              <Link
-                href="/resume"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-100 transition-colors"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/resume"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-100 transition-colors"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-                View Full Resume
-              </Link>
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  View Full Resume
+                </Link>
+                <a
+                  href="/resume/Fiona_Prendergast_SW_Robotics_Resume.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-amber-400 text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-300 transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
+                  Download PDF
+                </a>
+              </div>
             </div>
           </div>
         </div>
