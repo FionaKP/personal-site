@@ -8,6 +8,17 @@ export const metadata: Metadata = {
 
 const workExperience = [
   {
+    title: "Product Development Intern",
+    company: "Blueleaf Wealth Inc.",
+    period: "Jun 2023 - Present",
+    bullets: [
+      "Built and deployed client financial app on live Expo Go deployment pipeline using React Native, implementing custom visual themes, graphics from live financial data API, industry standard authentication, and custom gesture interactions",
+      "Designed a custom API from scratch to support financial advisory software, utilizing Postman to create a mock API that enabled parallel development workflows",
+      "Developed a preliminary front-end interface using the Next.js React framework to demonstrate API integration and functionality",
+      "Analyzed client feedback to diagnose UX/UI issues and implemented changes to data management and financial reporting application across both web and mobile",
+    ],
+  },
+  {
     title: "Integrations Software Engineering Intern",
     company: "Vestmark, Inc.",
     period: "Jun 2025 - Aug 2025",
@@ -26,16 +37,6 @@ const workExperience = [
       "Developed original coverage-based unit tests from scratch and peer reviewed other developers' code",
       "Led the effort to develop simulation code replicating a Global Navigation Satellite System (GNSS) via serial data and built responsive Python GUI to connect simulation application with production hardware",
       "Coordinated efforts to ensure simulation testing tool fulfilled requirements for verification",
-    ],
-  },
-  {
-    title: "Product Development Intern",
-    company: "Blueleaf Wealth Inc.",
-    period: "Jun 2023 - Dec 2024",
-    bullets: [
-      "Designed a custom API from scratch to support financial advisory software, utilizing Postman to create a mock API that enabled parallel development workflows",
-      "Developed a preliminary front-end interface using the Next.js React framework to demonstrate API integration and functionality",
-      "Analyzed client feedback to diagnose UX/UI issues and implemented changes to data management and financial reporting application across both web and mobile",
     ],
   },
   {
