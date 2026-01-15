@@ -79,7 +79,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              {/* <div className="mt-8 flex flex-wrap gap-3">
                 {["React", "Python", "Robotics", "TypeScript", "Leadership"].map((skill) => (
                   <span
                     key={skill}
@@ -88,7 +88,7 @@ export default function About() {
                     {skill}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

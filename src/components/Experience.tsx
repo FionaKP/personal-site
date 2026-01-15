@@ -132,7 +132,7 @@ export default function Experience() {
                   View Full Resume
                 </Link>
                 <a
-                  href="/resume/Fiona_Prendergast_SW_Robotics_Resume.pdf"
+                  href="/resume/FionaPrendergast_Product_Engineering.pdf"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 bg-amber-400 text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-300 transition-colors"
                 >
