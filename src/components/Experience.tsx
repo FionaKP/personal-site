@@ -2,19 +2,26 @@ import Link from "next/link";
 
 const experiences = [
   {
+    title: "Product Development Intern",
+    company: "Blueleaf Wealth Inc.",
+    period: "Jun 2023 - Present",
+    description: "Built and deployed client financial app on live Expo Go deployment pipeline using React Native, implementing custom visual themes, graphics from live financial data API, industry standard authentication, and custom gesture interactions.",
+    type: "work",
+  },
+  {
     title: "Integrations Software Engineering Intern",
     company: "Vestmark, Inc.",
     period: "Jun 2025 - Aug 2025",
     description: "Refactored legacy stock exchange code in Java, designed AWS migration proof-of-concept for custodial adapter systems using EC2, VPN, and SFTP.",
     type: "work",
   },
-  {
-    title: "Embedded Systems Engineering Intern",
-    company: "DCS Corporation",
-    period: "Jun 2024 - Aug 2024",
-    description: "Contributed to multi-million dollar defense project. Led development of GNSS simulation system with Python GUI for hardware integration testing.",
-    type: "work",
-  },
+  // {
+  //   title: "Embedded Systems Engineering Intern",
+  //   company: "DCS Corporation",
+  //   period: "Jun 2024 - Aug 2024",
+  //   description: "Contributed to multi-million dollar defense project. Led development of GNSS simulation system with Python GUI for hardware integration testing.",
+  //   type: "work",
+  // },
   {
     title: "Student Teaching Assistant",
     company: "WPI Computer Science Department",
@@ -132,7 +139,7 @@ export default function Experience() {
                   View Full Resume
                 </Link>
                 <a
-                  href="/resume/FionaPrendergast_Product_Engineering.pdf"
+                  href="/resume/SWE_Robotics_Resume.pdf"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 bg-amber-400 text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-300 transition-colors"
                 >
