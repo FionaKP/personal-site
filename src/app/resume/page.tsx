@@ -187,7 +187,7 @@ export default function ResumePage() {
                 Software & Robotics Engineering Student
               </p>
               <a
-                href="/resume/SWE_Robotics_Resume.pdf"
+                href="/resume/FionaPrendergast_SWE_Robotics_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-amber-400 text-[#1e3a5f] rounded-lg font-semibold hover:bg-amber-300 transition-colors text-sm"
               >
