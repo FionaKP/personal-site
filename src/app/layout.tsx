@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Roboto, Caveat } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { Analytics } from "@vercel/analytics/next"
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${roboto.variable} ${caveat.variable} antialiased`}>
         <Navigation />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );
